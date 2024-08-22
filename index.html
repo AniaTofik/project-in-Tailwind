@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindTemp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center bg-darkSlateGrey">
+    <div class="subscribe-card lg:flex lg:items-center bg-white w-[375px] lg:w-[800px] lg:p-6 lg:rounded-3xl m-6">
+        <img src="images/illustration-sign-up-mobile.svg" alt="" class="w-full lg:hidden">
+        <div class="px-4 pb-8 space-y-4 text-darkSlateGrey">
+            <p class="my-6 text-4xl font-bold">Stay updated!</p>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+            <ul>
+                <li class="flex items-start"><img src="images/icon-list.svg" alt="" class="mr-4">Product discovery and
+                    building what
+                    matters</li>
+                <li class="flex items-start"><img src="images/icon-list.svg" alt="" class="mr-4">Measuring to ensure
+                    updates are a
+                    success</li>
+                <li class="flex items-start"><img src="images/icon-list.svg" alt="" class="mr-4">And much more!</li>
+
+            </ul>
+
+            <div>
+                <label for="email" class="block mt-6 mb-2 font-bold text-sm">
+                    Email address</label>
+                <input type="text" id="email" placeholder="email@company.com"
+                    class="w-full p-4 rounded-lg border border-gray-400">
+            </div>
+
+            <button
+                class="btn-subscribe w-full p-4 rounded-lg bg-darkSlateGrey text-white hover:bg-charcoalGrey transition-colors">Subscribe
+                to monthly newsletter</button>
+        </div>
+        <img src="images/illustration-sign-up-desktop.svg" alt="" class="hidden lg:block">
+    </div>
+
+
+    <div class="dismiss-card hidden bg-white w-[375px] lg:w-[400px] m-6 pt-6 lg:px-5 lg:rounded-3xl">
+        <img src="images/icon-success.svg" alt="" class="py-6 mx-5">
+        <div class="px-4 pb-8 space-y-4 text-darkSlateGrey">
+            <p class="my-6 text-4xl font-bold">Thanks for subscribing!</p>
+            <p> A confirmation email has been sent to <spam class="font-bold">ash@loremcompany.com.</spam>
+                Please open it and click the button inside to confirm your subscription.</p>
+            <button
+                class="btn-dismiss w-full p-4 rounded-lg bg-darkSlateGrey text-white hover:bg-tomato transition-colors">Dismiss
+                message </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
