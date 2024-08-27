@@ -33,32 +33,38 @@
 
             </ul>
 
-            <div>
-                <label for="email" class="block mt-6 mb-2 font-bold text-sm">
-                    Email address</label>
-                <input type="text" id="email" placeholder="email@company.com"
+            <form id="registrationForm">
+                <div class="flex justify-between">
+                    <label for="emailInput" class="block mt-6 mb-2 font-bold text-sm">
+                        Email address</label>
+                    <span class="block mt-6 mb-2 font-bold text-sm text-tomato" id="emailFeedback"></span>
+                </div>
+                <input type="email" id="emailInput" oninput="validateEmailInput()" placeholder="email@company.com"
                     class="w-full p-4 rounded-lg border border-gray-400">
-            </div>
+            </form>
 
-            <button
-                class="btn-subscribe w-full p-4 rounded-lg bg-darkSlateGrey text-white hover:bg-charcoalGrey transition-colors">Subscribe
+            <button type="submit"
+                class="btn-subscribe w-full p-4 rounded-lg bg-darkSlateGrey text-white hover:bg-charcoalGrey transition-colors"
+                disabled>Subscribe
                 to monthly newsletter</button>
         </div>
         <img src="images/illustration-sign-up-desktop.svg" alt="" class="hidden lg:block">
     </div>
 
-
     <div class="dismiss-card hidden bg-white w-[375px] lg:w-[400px] m-6 pt-6 lg:px-5 lg:rounded-3xl">
         <img src="images/icon-success.svg" alt="" class="py-6 mx-5">
         <div class="px-4 pb-8 space-y-4 text-darkSlateGrey">
             <p class="my-6 text-4xl font-bold">Thanks for subscribing!</p>
-            <p> A confirmation email has been sent to <spam class="font-bold">ash@loremcompany.com.</spam>
+            <p> A confirmation email has been sent to <spam class="emailPopup font-bold"></spam>
                 Please open it and click the button inside to confirm your subscription.</p>
             <button
                 class="btn-dismiss w-full p-4 rounded-lg bg-darkSlateGrey text-white hover:bg-tomato transition-colors">Dismiss
                 message </button>
         </div>
     </div>
+
+
+
 
     <script src="main.js"></script>
 </body>
